@@ -40,7 +40,7 @@ docker run -t -p 8080:8080 -e PORT=8080 textract .
 See `client/client.py` for an example.
 
 Request json:
-```json
+```
 {
     "data": <base64 encoded file data>,
     "file_type": <file type / extension e. g. png, txt, etc ... (without '.')>
@@ -48,7 +48,7 @@ Request json:
 ```
 
 Response json:
-```json
+```
 {
     "text": <extracted text utf-8 encoded>
 }
